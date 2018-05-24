@@ -100,9 +100,9 @@ def show_football_news(message):
 'Наставник бельгийцев Роберто Мартинес огласил имена 28 футболистов, которые готовятся к главному турниру нынешнего лета.\n'
 'http://soccer365.ru/news/8571/')
 
-@bot.message_handler(regexp="Football")
+@bot.message_handler(regexp="Basketball")
 def show_football_news(message):
-    print('soccer')
+    print('basket')
     bot.send_message(message.chat.id,'В Алматы завершился 13-й юношеский Чемпионат по баскетболу «Кубок надежды»\n'
 'http://nbf.kz/news/?id=1561\n'
 'Нурсултан  Назарбаев поддержал инициативу «Challenge Другой ты!»\n'
@@ -127,6 +127,59 @@ def show_football_news(message):
 'http://nbf.kz/news/?id=1549\n'
 'В Алматы состоится тренерский семинар с участием Олимпийских чемпионов Алжана Жармухамедова и Ивана Едешко\n'
 'http://nbf.kz/news/?id=1520)\n')
+
+@bot.message_handler(regexp="Hockey")
+def show_football_news(message):
+    print('hock')
+    bot.send_message(message.chat.id,
+            'НХЛ. "Вегас" ждёт соперника по финалу\n'       
+'http://articles-nhl/193802-nkhl-vegas-zhdjot-sopernika-po-finalu/\n'
+
+            'ЧМ-2018. Швеция защитила титул, Россия впервые за 5 лет без медалей\n'     
+'http://articles-worldcup/193778-chm-2018-shvetsiya-zashchitila-titul-rossiya-vpervye-za-5-let-bez-medalej/\n'
+
+            'ЧМ-2018. Канада в шикарном матче отправила Россию домой\n'     
+'http://articles-worldcup/193594-chm-2018-kanada-v-shikarnom-matche-otpravila-rossiyu-domoj/\n'
+
+            'ЧМ-2018. Россия в четвертьфинале вышла на Канаду\n'        
+'http://articles-worldcup/193495-chm-2018-rossiya-v-chetvertfinale-vyshla-na-kanadu\n'
+
+            'ЧМ-2018. Россия вернула Словакии должок за Пхенчхан\n'     
+'http://articles-worldcup/193432-chm-2018-rossiya-vernula-slovakii-dolzhok-za-pkhenchkhan\n'
+
+            'ЧМ-2018. Сборная России одержала четвертую победу на турнире\n'        
+'http://articles-worldcup/193351-chm-2018-sbornaya-rossii-oderzhala-chetvertuyu-pobedu-na-turnire\n'
+
+            'ЧМ-2018. Чехия поставила Россию на место\n'        
+'http://articles-worldcup/193237-chm-2018-chekhiya-postavila-rossiyu-na-mesto\n'
+
+            'ЧМ-2018. Россия продолжает громить аутсайдеров\n'      
+'http://articles-worldcup/193078-chm-2018-rossiya-prodolzhaet-gromit-autsajderov\n'
+
+            'ЧМ-2018. Россия снова забросила 7 шайб, на очереди - Беларусь\n'       
+'http://articles-worldcup/193011-chm-2018-rossiya-snova-zabrosila-7-shajb-na-ocheredi-belarus\n'
+
+            'ЧМ-2018. Россия размялась на французах\n'      
+'http://articles-worldcup/192914-chm-2018-rossiya-razmyalas-na-frantsuzakh\n'
+
+            'ЧМ по хоккею 2018: расписание, состав сборной России. Все, что нужно знать турнире\n'      
+'http://articles-worldcup/192692-chm-po-khokkeyu-2018-raspisanie-sostav-sbornoj-rossii-vse-chto-nuzhno-znat-turnire\n'
+
+            'Возвращение короля. "Ак Барс" победил ЦСКА в финале Кубка Гагарина\n'      
+'http://articles-khl/192291-vozvrashchenie-korolya-ak-bars-pobedil-tsska-v-finale-kubka-gagarina\n'
+
+            '"Ак Барс" не дал шансов "Трактору", ЦСКА спасли теневые герои\n'       
+'http://articles-khl/191678-ak-bars-ne-dal-shansov-traktoru-tsska-spasli-tenevye-geroi\n'
+
+            'Непризнанные звезды НХЛ 2017-18\n'     
+'http://articles-nhl/191650-nepriznannye-zvezdy-nkhl-2017-18\n'
+
+            'Награды NHL: кто все-таки станет MVP?\n'       
+'http://articles-nhl/191576-nagrady-nhl-kto-vse-taki-stanet-mvp\n'
+
+            'Я прагматик, но я верю в легенды. Итоги восточных полуфиналов КХЛ\n'       
+'http://articles-khl/191125-ya-pragmatik-no-ya-veryu-v-legendy-itogi-vostochnykh-polufinalov-kkhl\n')
+
 if __name__ == '__main__':
     print('Starting sportbot_bot')
     bot.polling()
